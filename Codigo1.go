@@ -23,6 +23,8 @@ func main() {
 	Calculadora(numeroX,numeroY)*/
 	fmt.Println(personas(20,21))
 
+	lenguajes("Español","Ingles","Japones")
+
 }
 
 
@@ -59,4 +61,10 @@ func main() {
 		}
 		var mensaje string=fmt.Sprintf("El numero de personas es %d con edad de %d",totalpersonas(),edad)
 		return mensaje
+	}
+
+	func lenguajes(lenguajes ...string){
+		for _,lenguaje := range lenguajes{
+			fmt.Println(lenguaje)
+		}
 	}
