@@ -4,13 +4,34 @@ import (
 	"fmt"
 )
 
+type persona struct{
+	nombre string
+	peso int
+	altura float32
+}
+
 func main() {
-	var suma int = 8 + 9
-	var resta int = 6 - 4
-	var nombre string = "Alex Rojas"
-	const pi float32=3.1416
-	fmt.Println("la suma de los numeros 8 y 9 es igual a",suma,", Pi es igual a",pi)
-	fmt.Println(resta)
-	fmt.Println(nombre)
+	var yo = persona{
+		"Alexis",
+		65,
+		1.67}
 	
+	fmt.Println(yo.nombre)
+	var numeroX int = 10;
+	var numeroY int = 6;
+
+	//suma
+	fmt.Println("la suma es:",numeroX+numeroY)
+
+	//resta
+	fmt.Println("la resta es:",numeroX-numeroY)
+
+	//multiplicacion
+	fmt.Println("la multiplicacion es:",numeroX*numeroY)
+
+	//division
+	fmt.Println("la division es:",numeroX/numeroY)
+
+	//residuo
+	fmt.Println("el residuo de la division es:",numeroX%numeroY)
 }
